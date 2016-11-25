@@ -6,6 +6,10 @@ package com.company;
 public class Dealer extends Computer {
     private Deck deck = new Deck();
 
+    public Dealer(String name) {
+        super(new DealerIntellect(), name);
+    }
+
     public void deal(Player player) {
         Card current = deck.pop();
         player.take(current);
