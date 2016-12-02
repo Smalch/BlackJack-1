@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by falyanguzov on 14.11.2016.
  */
-public abstract class Player {
+public abstract class Player extends Table {
     public Hand hand = new Hand();
     private Intellect intellect;
     String name;
